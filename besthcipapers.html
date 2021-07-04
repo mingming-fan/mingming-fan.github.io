@@ -37,17 +37,17 @@
         request.responseType = "arraybuffer";
         var data;
         var wb;
-        console.log("before onreadystatechange");
+        // console.log("before onreadystatechange");
         request.onreadystatechange = function () {
-        console.log("in onreadystatechange");
+        // console.log("in onreadystatechange");
         if (request.readyState === 4) {//request successful, file read.
         "use strict";
-        console.log("successful");
+        // console.log("successful");
         // create Table HTML code from data read from excel file
         data = new Uint8Array(request.response);
         wb = XLSX.read(data, {type: 'array'});
         var htmlstr = XLSX.write(wb, {sheet:"CHI", type:'string', bookType: 'html'});
-        console.log(htmlstr);
+        // console.log(htmlstr);
         $('#wrapper')[0].innerHTML += htmlstr;
 
         };
