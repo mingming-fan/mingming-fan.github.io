@@ -30,60 +30,60 @@
 
     /* start code */
     var url = "https://wwww.mingmingfan.com/BestPapers.csv"; // replace "11in02ar.xls" with the URL to the file you want.
-    //
-    // var request = new XMLHttpRequest();
-    //
-    // // set request to get the specified file
-    // request.open("GET", url, true);
-    // request.responseType = "arraybuffer";
-    // request.send();
-    // var data;
-    // var wb;
-    // //console.log("before onreadystatechange");
-    // request.onreadystatechange = function() {
-    //   alert("in onreadystatechange");
-    //   if (request.readyState === 4) { //request successful, file read.
-    //     "use strict";
-    //     //console.log("successful");
-    //     // create Table HTML code from data read from excel file
-    //     data = new Uint8Array(request.response);
-    //     wb = XLSX.read(data, {
-    //       type: 'array'
-    //     });
-    //     var htmlstr = XLSX.write(wb, {
-    //       sheet: 'DIS',
-    //       type: 'binary',
-    //       bookType: 'html'
-    //     });
-    //     console.log(htmlstr);
-    //     $('#wrapper')[0].innerHTML += htmlstr;
-    //
-    //   };
-    // }
 
+    var request = new XMLHttpRequest();
 
-    function populateTable() {
-      var tableContent = '';
-      $.get(url, function(data) {
-        console.log("in function")
-        alert(data);
-        //this will split the string into array line by line
-        var lineByline = data.split('\n');
-        //here we're itraing the array which you've created and printing the values
-        $.each(lineByline, function(key, value) {
-          tableContent += '<tr>';
-          var contents = value.split(',')
-          for (i = 0; i < contents.length; i++) {
-            tableContent += '<td>' + contents[i] + '</td>';
-          }
-          tableContent += '</tr>';
+    // set request to get the specified file
+    request.open("GET", url, true);
+    request.responseType = "arraybuffer";
+    request.send();
+    var data;
+    var wb;
+    //console.log("before onreadystatechange");
+    request.onreadystatechange = function() {
+      alert("in onreadystatechange");
+      if (request.readyState === 4) { //request successful, file read.
+        "use strict";
+        //console.log("successful");
+        // create Table HTML code from data read from excel file
+        data = new Uint8Array(request.response);
+        wb = XLSX.read(data, {
+          type: 'array'
         });
+        var htmlstr = XLSX.write(wb, {
+          sheet: '',
+          type: 'binary',
+          bookType: 'html'
+        });
+        console.log(htmlstr);
+        $('#wrapper')[0].innerHTML += htmlstr;
 
-        $('#wrapper')[0].innerHTML += tableContent;
-      });
-    };
+      };
+    }
 
-    populateTable()
+
+    // function populateTable() {
+    //   var tableContent = '';
+    //   $.get(url, function(data) {
+    //     console.log("in function")
+    //     alert(data);
+    //     //this will split the string into array line by line
+    //     var lineByline = data.split('\n');
+    //     //here we're itraing the array which you've created and printing the values
+    //     $.each(lineByline, function(key, value) {
+    //       tableContent += '<tr>';
+    //       var contents = value.split(',')
+    //       for (i = 0; i < contents.length; i++) {
+    //         tableContent += '<td>' + contents[i] + '</td>';
+    //       }
+    //       tableContent += '</tr>';
+    //     });
+    //
+    //     $('#wrapper')[0].innerHTML += tableContent;
+    //   });
+    // };
+    //
+    // populateTable()
   </script>
 </body>
 
