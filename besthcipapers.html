@@ -46,7 +46,7 @@
         // create Table HTML code from data read from excel file
         data = new Uint8Array(request.response);
         wb = XLSX.read(data, {type: 'array'});
-        var htmlstr = XLSX.write(wb, {sheet:"CHI", type:'string', bookType: 'html'});
+        var htmlstr = XLSX.write(wb, {sheet:"CHI", type:'binary', bookType: 'html'});
         // console.log(htmlstr);
         $('#wrapper')[0].innerHTML += htmlstr;
 
