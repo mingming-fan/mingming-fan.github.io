@@ -9,73 +9,75 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script lang="javascript" src="xlsx/dist/xlsx.full.min.js"></script>
 </head>
+
 <body>
-<div id="wrapper">
-        <!-- <input type="file" id="input-excel" /> -->
-</div>
-<script>
-        // $('#input-excel').change(function(e){
-        //         var reader = new FileReader();
-        //         reader.readAsArrayBuffer(e.target.files[0]);
-        //
-        //         reader.onload = function(e) {
-        //                 var data = new Uint8Array(reader.result);
-        //                 var wb = XLSX.read(data,{type:'array'});
-        //
-        //                 var htmlstr = XLSX.write(wb,{sheet:"CHI", type:'binary',bookType:'html'});
-        //                 $('#wrapper')[0].innerHTML += htmlstr;
-        //         }
-        // });
+  <div id="wrapper">
+    <!-- <input type="file" id="input-excel" /> -->
+  </div>
+  <script>
+    // $('#input-excel').change(function(e){
+    //         var reader = new FileReader();
+    //         reader.readAsArrayBuffer(e.target.files[0]);
+    //
+    //         reader.onload = function(e) {
+    //                 var data = new Uint8Array(reader.result);
+    //                 var wb = XLSX.read(data,{type:'array'});
+    //
+    //                 var htmlstr = XLSX.write(wb,{sheet:"CHI", type:'binary',bookType:'html'});
+    //                 $('#wrapper')[0].innerHTML += htmlstr;
+    //         }
+    // });
 
-        /* start code */
-        var url = "BestPapers.xlsx";// replace "11in02ar.xls" with the URL to the file you want.
+    /* start code */
+    var url = "BestPapers.csv"; // replace "11in02ar.xls" with the URL to the file you want.
 
-        var request = new XMLHttpRequest();
+    //   var request = new XMLHttpRequest();
+    //
+    //   // set request to get the specified file
+    //   request.open("GET", url, true);
+    //   request.responseType = "arraybuffer";
+    //   var data;
+    //   var wb;
+    //   // console.log("before onreadystatechange");
+    //   request.onreadystatechange = function () {
+    //   // console.log("in onreadystatechange");
+    //   if (request.readyState === 4) {//request successful, file read.
+    //   "use strict";
+    //   // console.log("successful");
+    //   // create Table HTML code from data read from excel file
+    //   data = new Uint8Array(request.response);
+    //   wb = XLSX.read(data, {type: 'array'});
+    //   var htmlstr = XLSX.write(wb, {sheet:"CHI", type:'binary', bookType: 'html'});
+    //   // console.log(htmlstr);
+    //   $('#wrapper')[0].innerHTML += htmlstr;
+    //
+    //   };
+    // }
 
-        // set request to get the specified file
-        request.open("GET", url, true);
-        request.responseType = "arraybuffer";
-        var data;
-        var wb;
-        // console.log("before onreadystatechange");
-        request.onreadystatechange = function () {
-        // console.log("in onreadystatechange");
-        if (request.readyState === 4) {//request successful, file read.
-        "use strict";
-        // console.log("successful");
-        // create Table HTML code from data read from excel file
-        data = new Uint8Array(request.response);
-        wb = XLSX.read(data, {type: 'array'});
-        var htmlstr = XLSX.write(wb, {sheet:"CHI", type:'binary', bookType: 'html'});
-        // console.log(htmlstr);
-        $('#wrapper')[0].innerHTML += htmlstr;
 
-        };
-      }
+    function populateTable() {
+      var tableContent = '';
+      $.get(url, function(data) {
+        console.log("in function")
+        alert(data);
+        //this will split the string into array line by line
+        var lineByline = data.split('\n');
+        //here we're itraing the array which you've created and printing the values
+        $.each(lineByline, function(key, value) {
+          tableContent += '<tr>';
+          var contents = value.split(',')
+          for (i = 0; i < contents.length; i++) {
+            tableContent += '<td>' + contents[i] + '</td>';
+          }
+          tableContent += '</tr>';
+        });
 
+        $('#wrapper')[0].innerHTML += tableContent;
+      });
+    };
 
-      // function populateTable() {
-
-//     var tableContent = '';
-//
-//
-//     $.get(url, function( data ) {
-//       console.log("in function")
-//       alert(data);
-//       //this will split the string into array line by line
-//       var lineByline = data.split('\n');
-//         //here we're itraing the array which you've created and printing the values
-//         $.each(lineByline , function(key,value){
-//             tableContent += '<tr>';
-//             tableContent += '<td>' + value + '</td>';
-//             tableContent += '</tr>';
-//         });
-//
-//         $('#wrapper')[0].innerHTML += tableContent;
-//     });
-// };
-//
-// populateTable()
-</script>
+    populateTable()
+  </script>
 </body>
+
 </html>
