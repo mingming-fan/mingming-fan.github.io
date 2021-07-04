@@ -39,12 +39,12 @@
     request.send();
     var data;
     var wb;
-    console.log("before onreadystatechange");
+    //console.log("before onreadystatechange");
     request.onreadystatechange = function() {
       alert("in onreadystatechange");
       if (request.readyState === 4) { //request successful, file read.
         "use strict";
-        console.log("successful");
+        //console.log("successful");
         // create Table HTML code from data read from excel file
         data = new Uint8Array(request.response);
         wb = XLSX.read(data, {
