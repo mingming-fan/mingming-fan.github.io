@@ -20,7 +20,7 @@ img { border:none; }
 body {
 	margin:0;
 	padding:0 0 0 10px;
-	background-color:#272727;
+	background-color: #373737;
 	color:#333;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
 	border: 0px solid white;
@@ -59,6 +59,7 @@ h1 {
 	padding: 0;
 	font-size:30px;
 	border: 0px solid white;
+	background-color: #373737;
 }
 
 

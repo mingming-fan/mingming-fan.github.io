@@ -5,86 +5,135 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="icon" href="./images/hkust-logo.png">
   <title>Mingming Fan, Ph.D.</title>
-  <!-- <link href="defaultstyles.css" rel="stylesheet" media="screen" /> -->
+  <link href="table.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script lang="javascript" src="xlsx/dist/xlsx.full.min.js"></script>
 </head>
 
 <body>
   <div id="wrapper">
-    <!-- <input type="file" id="input-excel" /> -->
+    <input type="file" id="input-excel" />
   </div>
   <script>
-    // $('#input-excel').change(function(e){
-    //         var reader = new FileReader();
-    //         reader.readAsArrayBuffer(e.target.files[0]);
+    $('#input-excel').change(function(e){
+      var reader = new FileReader();
+                reader.readAsArrayBuffer(e.target.files[0]);
+                reader.onload = function(e) {
+                        var data = new Uint8Array(reader.result);
+                        var wb = XLSX.read(data,{type:'array'});
+
+                        var htmlstr = XLSX.write(wb,{sheet:"CHI", type:'binary', bookType:'html'});
+
+                        htmlstr.replace("<table>", "<table class=\"styled-table\">");
+                        console.log(htmlstr);
+                        //htmlstr.replace()
+                        $('#wrapper')[0].innerHTML += htmlstr;
+                      }
+                    });
+
+    // /* start code */
+    // var url = "http://wwww.mingmingfan.com/BestPapers.xlsx"; // replace "11in02ar.xls" with the URL to the file you want.
     //
-    //         reader.onload = function(e) {
-    //                 var data = new Uint8Array(reader.result);
-    //                 var wb = XLSX.read(data,{type:'array'});
+    // var request = new XMLHttpRequest();
     //
-    //                 var htmlstr = XLSX.write(wb,{sheet:"CHI", type:'binary',bookType:'html'});
-    //                 $('#wrapper')[0].innerHTML += htmlstr;
-    //         }
-    // });
-
-    /* start code */
-    var url = "http://wwww.mingmingfan.com/BestPapers.xlsx"; // replace "11in02ar.xls" with the URL to the file you want.
-
-    var request = new XMLHttpRequest();
-
-    // set request to get the specified file
-    request.open("GET", url, true);
-    request.responseType = "arraybuffer";
-    request.send();
-    var data;
-    var wb;
-    //console.log("before onreadystatechange");
-    request.onreadystatechange = function() {
-      alert("in onreadystatechange");
-      if (request.readyState === 4) { //request successful, file read.
-        "use strict";
-        //console.log("successful");
-        // create Table HTML code from data read from excel file
-        data = new Uint8Array(request.response);
-        wb = XLSX.read(data, {
-          type: 'array'
-        });
-        var htmlstr = XLSX.write(wb, {
-          sheet: '',
-          type: 'binary',
-          bookType: 'html'
-        });
-        console.log(htmlstr);
-        $('#wrapper')[0].innerHTML += htmlstr;
-
-      };
-    }
-
-
-    // function populateTable() {
-    //   var tableContent = '';
-    //   $.get(url, function(data) {
-    //     console.log("in function")
-    //     alert(data);
-    //     //this will split the string into array line by line
-    //     var lineByline = data.split('\n');
-    //     //here we're itraing the array which you've created and printing the values
-    //     $.each(lineByline, function(key, value) {
-    //       tableContent += '<tr>';
-    //       var contents = value.split(',')
-    //       for (i = 0; i < contents.length; i++) {
-    //         tableContent += '<td>' + contents[i] + '</td>';
-    //       }
-    //       tableContent += '</tr>';
+    // // set request to get the specified file
+    // request.open("GET", url, true);
+    // request.responseType = "arraybuffer";
+    // request.send();
+    // var data;
+    // var wb;
+    // //console.log("before onreadystatechange");
+    // request.onreadystatechange = function() {
+    //   alert("in onreadystatechange");
+    //   if (request.readyState === 4) { //request successful, file read.
+    //     "use strict";
+    //     //console.log("successful");
+    //     // create Table HTML code from data read from excel file
+    //     data = new Uint8Array(request.response);
+    //     wb = XLSX.read(data, {
+    //       type: 'array'
     //     });
+    //     var htmlstr = XLSX.write(wb, {
+    //       sheet: '',
+    //       type: 'binary',
+    //       bookType: 'html'
+    //     });
+    //     console.log(htmlstr);
+    //     $('#wrapper')[0].innerHTML += htmlstr;
     //
-    //     $('#wrapper')[0].innerHTML += tableContent;
-    //   });
-    // };
+    //   };
+    // }
     //
-    // populateTable()
+    //
+    // // function populateTable() {
+    // //   var tableContent = '';
+    // //   $.get(url, function(data) {
+    // //     console.log("in function")
+    // //     alert(data);
+    // //     //this will split the string into array line by line
+    // //     var lineByline = data.split('\n');
+    // //     //here we're itraing the array which you've created and printing the values
+    // //     $.each(lineByline, function(key, value) {
+    // //       tableContent += '<tr>';
+    // //       var contents = value.split(',')
+    // //       for (i = 0; i < contents.length; i++) {
+    // //         tableContent += '<td>' + contents[i] + '</td>';
+    // //       }
+    // //       tableContent += '</tr>';
+    // //     });
+    // //
+    // //     $('#wrapper')[0].innerHTML += tableContent;
+    // //   });
+    // // };
+    // //
+    // // populateTable()
   </script>
+
+<!--
+  <table class="styled-table">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Points</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Dom</td>
+              <td>6000</td>
+          </tr>
+          <tr class="active-row">
+              <td>Melissa</td>
+              <td>5150</td>
+      </tbody>
+  </table> -->
+<p>
+Conferences in HCI: <a href="#CHI">CHI</a>, <a href="#IMWUT">UbiComp/IMWUT</a>, <a href="#CSCW">CSCW</a>
+</p>
+
+    <table id="CHI">
+        <thead>
+          <tr>
+            CHI (CHI Conference on Human Factors in Computing Systems)
+          </tr>
+            <tr>
+                <th>Year</th>
+                <th>Title</th>
+                <th>Authors</th>
+                <th>DOI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2021</td>
+                <td>What Do Hackathons Do? Understanding Participation in Hackathons Through Program Theory Analysis</td>
+                <td>Jeanette Falk, Gopinaath Kannabiran, Nicolai Brodersen Hansen</td>
+                <td>https://doi.org/10.1145/3411764.3445198</td>
+            </tr>
+
+        </tbody>
+    </table>
+
 </body>
 
 </html>
