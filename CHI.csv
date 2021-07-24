@@ -1,28 +1,29 @@
+Year,Title,Authors,DOI
 2021,What Do Hackathons Do? Understanding Participation in Hackathons Through Program Theory Analysis,"Jeanette Falk, Gopinaath Kannabiran, Nicolai Brodersen Hansen",https://doi.org/10.1145/3411764.3445198
-2021,Falx: Synthesis-Powered Visualization Authoring,"Chenglong Wang, Yu Feng, Rastislav Bodik, Isil Dillig, Alvin Cheung, Amy J Ko",
-2021,"""Can I Not Be Suicidal on a Sunday?"": Understanding Technology-Mediated Pathways to Mental Health Support","Sachin R Pendse, Amit Sharma, Aditya Vashistha, Munmun De Choudhury, Neha Kumar",
-2021,CapContact: Super-resolution Contact Areas from Capacitive Touchscreens,"Paul Streli, Christian Holz",
-2021,RadarNet: Efficient Gesture Recognition Technique Utilizing a Miniaturized Radar Sensor,"Eiji Hayashi, Jaime Lien, Nicholas Gillian, Leonardo Giusti, Dave Weber, Jin Yamanaka, Lauren Bedal, Ivan Poupyrev",
-2021,Screen Recognition: Creating Accessibility Metadata for Mobile Applications from Pixels,"Xiaoyi Zhang, Lilian de Greef, Amanda Swearngin, Samuel White, Kyle Murray, Lisa Yu, Qi Shan, Jeffrey Nichols, Jason Wu, Chris Fleizach, Aaron Everitt, Jeffrey P Bigham",
-2021,LGBTQ Persons' Pregnancy Loss Disclosures to Known Ties on Social Media: Disclosure Decisions and Ideal Disclosure Environments,"Cassidy Pyle, Lee Roosevelt, Ashley Lacombe-Duncan, Nazanin Andalibi",
-2021,Increasing Electrical Muscle Stimulation’s Dexterity by means of Back of the Hand Actuation,"Akifumi Takahashi, Jas Brooks, Hiroyuki Kajimoto, Pedro Lopes",
-2021,Designing Menstrual Technologies with Adolescents,"Marie Louise Juul Søndergaard, Marianela Ciolfi Felice, Madeline Balaam",
-2021,The Show Must Go On: A conceptual model of conducting synchronous participatory design with children online,"Kung Jin Lee, Wendy Roldan, Tian Qi Zhu, Harkiran Kaur Saluja, Sungmin Na, Britnie Chin, Yilin Zeng, Jin Ha Lee, Jason Yip",
-2021,Building for ‘We’: Safety Settings for Couples with Memory Concerns,"Nora McDonald, Helena M. Mentis",
-2021,"Oh, Snap! A Fabrication Pipeline to Magnetically Connect Conventional and 3D-Printed Electronics","Martin Schmitz, Jan Riemann, Florian Müller, Steffen Kreis, Max Mühlhäuser",
-2021,Getting Ourselves Together: Epistemic Burden and Data-centered Participatory Design Research,"Jennifer Pierre, Roderic Crooks, Morgan Currie, Britt Paris, Irene Pasquetto",
-2021,"""Everyone wants to do the model work, not the data work"": Data Cascades in High-Stakes AI","Nithya Sambasivan, Shivani Kapania, Hannah Highfill, Diana Akrong, Praveen Paritosh, Lora M Aroyo",
-2021,Resisting the Medicalisation of Menopause: Reclaiming the Body through Design,"Marianela Ciolfi Felice, Marie Louise Juul Søndergaard, Madeline Balaam",
-2021,U!Scientist: Designing for People-Powered Research in Museums,"Mmachi God'sglory Obiorah, James K.L. Hammerman, Becky Rother, Will Granger, Haley Margaret West, Michael Horn, Laura Trouille",
-2021,“Why lose control?” A Study of Freelancers' Perspectives with Gig Economy Platforms,"Juan Carlos Alvarez de la Vega, Marta E. Cecchinato, John Rooksby",
-2021,"""That courage to encourage"": Participation and Aspirations in Chat-based Peer Support for Youth Living with HIV","Naveena Karusala, David Odhiambo Seeh, Cyrus Mugo, Brandon Guthrie, Megan A Moreno, Grace John-Stewart, Irene Inwani, Richard Anderson, Keshet Ronen",
-2021,The Ethics of Multiplayer Game Design and Community Management: Industry Perspectives and Challenges,"Lucy A. Sparrow, Martin Gibbs, Michael Arnold",
-2021,Coupling Simulation and Hardware for Interactive Circuit Debugging,"Evan Strasnick, Maneesh Agrawala, Sean Follmer",
-2021,Impact of Task on Attentional Tunneling in Handheld Augmented Reality,"Brandon Victor Syiem, Ryan M. Kelly, Jorge Goncalves, Eduardo Velloso, Tilman Dingler",
-2021,XRgonomics: Facilitating the Creation of Ergonomic 3D Interfaces,"João Marcelo Evangelista Belo, Anna Maria Feit, Tiare Feuchtner, Kaj Grønbæk",
-2021,Heuristic Evaluation of Conversational Agents,"Raina Langevin, Ross J Lordon, Thi Avrahami, Benjamin R. Cowan, Tad Hirsch, Gary Hsieh",
-2021,Clandestino or Rifugiato? Anti-immigration Facebook Ad Targeting in Italy,"Arthur Capozzi, Gianmarco De Francisci Morales, Yelena Mejova, Corrado Monti, André Panisson, Daniela Paolotti",
-2021,The Landscape and Gaps in Open Source Fairness Toolkits,"Michelle Seng Ah Lee, Jatinder Singh",
-2021,Understanding Data Accessibility for People with Intellectual and Developmental Disabilities,"Keke Wu, Emma Petersen, Tahmina Ahmad, David Burlinson, Shea Tanis, Danielle Albers Szafir",
-2021,How to Evaluate Object Selection and Manipulation in VR? Guidelines from 20 Years of Studies,"Joanna Bergström, Tor-Salve Dalsgaard, Jason Alexander, Kasper Hornbæk",
-2021,Designing Interactive Transfer Learning Tools for ML Non-Experts,"Swati Mishra, Jeffrey M Rzeszotarski",
+2021,Falx: Synthesis-Powered Visualization Authoring,"Chenglong Wang, Yu Feng, Rastislav Bodik, Isil Dillig, Alvin Cheung, Amy J Ko",https://doi.org/10.1145/3411764.3445249
+2021,"""Can I Not Be Suicidal on a Sunday?"": Understanding Technology-Mediated Pathways to Mental Health Support","Sachin R Pendse, Amit Sharma, Aditya Vashistha, Munmun De Choudhury, Neha Kumar",https://doi.org/10.1145/3411764.3445410
+2021,CapContact: Super-resolution Contact Areas from Capacitive Touchscreens,"Paul Streli, Christian Holz",https://doi.org/10.1145/3411764.3445621
+2021,RadarNet: Efficient Gesture Recognition Technique Utilizing a Miniaturized Radar Sensor,s,https://doi.org/10.1145/3411764.3445367
+2021,Screen Recognition: Creating Accessibility Metadata for Mobile Applications from Pixels,"Xiaoyi Zhang, Lilian de Greef, Amanda Swearngin, Samuel White, Kyle Murray, Lisa Yu, Qi Shan, Jeffrey Nichols, Jason Wu, Chris Fleizach, Aaron Everitt, Jeffrey P Bigham",https://doi.org/10.1145/3411764.3445186
+2021,LGBTQ Persons' Pregnancy Loss Disclosures to Known Ties on Social Media: Disclosure Decisions and Ideal Disclosure Environments,"Cassidy Pyle, Lee Roosevelt, Ashley Lacombe-Duncan, Nazanin Andalibi",https://doi.org/10.1145/3411764.3445331
+2021,Increasing Electrical Muscle Stimulation’s Dexterity by means of Back of the Hand Actuation,"Akifumi Takahashi, Jas Brooks, Hiroyuki Kajimoto, Pedro Lopes",https://doi.org/10.1145/3411764.3445761
+2021,Designing Menstrual Technologies with Adolescents,"Marie Louise Juul Søndergaard, Marianela Ciolfi Felice, Madeline Balaam",https://doi.org/10.1145/3411764.3445471
+2021,The Show Must Go On: A conceptual model of conducting synchronous participatory design with children online,"Kung Jin Lee, Wendy Roldan, Tian Qi Zhu, Harkiran Kaur Saluja, Sungmin Na, Britnie Chin, Yilin Zeng, Jin Ha Lee, Jason Yip",https://doi.org/10.1145/3411764.3445715
+2021,Building for ‘We’: Safety Settings for Couples with Memory Concerns,"Nora McDonald, Helena M. Mentis",https://doi.org/10.1145/3411764.3445071
+2021,"Oh, Snap! A Fabrication Pipeline to Magnetically Connect Conventional and 3D-Printed Electronics","Martin Schmitz, Jan Riemann, Florian Müller, Steffen Kreis, Max Mühlhäuser",https://doi.org/10.1145/3411764.3445641
+2021,Getting Ourselves Together: Epistemic Burden and Data-centered Participatory Design Research,"Jennifer Pierre, Roderic Crooks, Morgan Currie, Britt Paris, Irene Pasquetto",https://doi.org/10.1145/3411764.3445103
+2021,"""Everyone wants to do the model work, not the data work"": Data Cascades in High-Stakes AI","Nithya Sambasivan, Shivani Kapania, Hannah Highfill, Diana Akrong, Praveen Paritosh, Lora M Aroyo",https://doi.org/10.1145/3411764.3445518
+2021,Resisting the Medicalisation of Menopause: Reclaiming the Body through Design,"Marianela Ciolfi Felice, Marie Louise Juul Søndergaard, Madeline Balaam",https://doi.org/10.1145/3411764.3445153
+2021,U!Scientist: Designing for People-Powered Research in Museums,"Mmachi God'sglory Obiorah, James K.L. Hammerman, Becky Rother, Will Granger, Haley Margaret West, Michael Horn, Laura Trouille",https://doi.org/10.1145/3411764.3445334
+2021,“Why lose control?” A Study of Freelancers' Perspectives with Gig Economy Platforms,"Juan Carlos Alvarez de la Vega, Marta E. Cecchinato, John Rooksby",https://doi.org/10.1145/3411764.3445305
+2021,"""That courage to encourage"": Participation and Aspirations in Chat-based Peer Support for Youth Living with HIV","Naveena Karusala, David Odhiambo Seeh, Cyrus Mugo, Brandon Guthrie, Megan A Moreno, Grace John-Stewart, Irene Inwani, Richard Anderson, Keshet Ronen",https://doi.org/10.1145/3411764.3445313
+2021,The Ethics of Multiplayer Game Design and Community Management: Industry Perspectives and Challenges,"Lucy A. Sparrow, Martin Gibbs, Michael Arnold",https://doi.org/10.1145/3411764.3445363
+2021,Coupling Simulation and Hardware for Interactive Circuit Debugging,"Evan Strasnick, Maneesh Agrawala, Sean Follmer",https://doi.org/10.1145/3411764.3445422
+2021,Impact of Task on Attentional Tunneling in Handheld Augmented Reality,"Brandon Victor Syiem, Ryan M. Kelly, Jorge Goncalves, Eduardo Velloso, Tilman Dingler",https://doi.org/10.1145/3411764.3445580
+2021,XRgonomics: Facilitating the Creation of Ergonomic 3D Interfaces,"João Marcelo Evangelista Belo, Anna Maria Feit, Tiare Feuchtner, Kaj Grønbæk",https://doi.org/10.1145/3411764.3445349
+2021,Heuristic Evaluation of Conversational Agents,"Raina Langevin, Ross J Lordon, Thi Avrahami, Benjamin R. Cowan, Tad Hirsch, Gary Hsieh",https://doi.org/10.1145/3411764.3445312
+2021,Clandestino or Rifugiato? Anti-immigration Facebook Ad Targeting in Italy,"Arthur Capozzi, Gianmarco De Francisci Morales, Yelena Mejova, Corrado Monti, André Panisson, Daniela Paolotti",https://doi.org/10.1145/3411764.3445082
+2021,The Landscape and Gaps in Open Source Fairness Toolkits,"Michelle Seng Ah Lee, Jatinder Singh",https://doi.org/10.1145/3411764.3445261
+2021,Understanding Data Accessibility for People with Intellectual and Developmental Disabilities,"Keke Wu, Emma Petersen, Tahmina Ahmad, David Burlinson, Shea Tanis, Danielle Albers Szafir",https://doi.org/10.1145/3411764.3445743
+2021,How to Evaluate Object Selection and Manipulation in VR? Guidelines from 20 Years of Studies,"Joanna Bergström, Tor-Salve Dalsgaard, Jason Alexander, Kasper Hornbæk",https://doi.org/10.1145/3411764.3445193
+2021,Designing Interactive Transfer Learning Tools for ML Non-Experts,"Swati Mishra, Jeffrey M Rzeszotarski",https://doi.org/10.1145/3411764.3445096
