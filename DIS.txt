@@ -14,4 +14,4 @@ Ximeng Zhang,
 Md. Tahmidul Islam Molla ,
 Margaret Dunne,
 Francois Guimbretiere ,
-Cindy Hsin-Liu Kao </td></tr><tr><td width=2.5%>2021</td><td width=37.5%><a href="https://doi.org/10.1145/3461778.3462033">“Why are they all obsessed with Gender?” — (Non)binary Navigations through Technological Infrastructures</a></td><td width=60%>Katta Spiel</td></tr></table><br>
+Cindy Hsin-Liu Kao </td></tr><tr><td width=2.5%>2021</td><td width=37.5%><a href="https://doi.org/10.1145/3461778.3462033">“Why are they all obsessed with Gender?  (Non)binary Navigations through Technological Infrastructures</a></td><td width=60%>Katta Spiel</td></tr></table><br>
