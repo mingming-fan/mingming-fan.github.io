@@ -46,7 +46,7 @@ with open('VIS.csv', 'r', encoding='gbk') as input, open('VIS.txt', 'w', newline
 with open('UbiComp.csv', 'r', encoding='gbk') as input, open('UbiComp.txt', 'w', newline='') as output:
     reader = csv.reader(input, delimiter = ',')
 
-    output.write("<table><thead><td colspan=3><a name=\"UbiComp\">UbiComp/Pervasive/IMWUT</a></td></thead>");
+    output.write("<table><thead><td colspan=3><a name=\"UbiComp\">UbiComp/ISWC/Pervasive/IMWUT</a></td></thead>");
     counter = 1
     for row in reader:
         if counter == 1:
