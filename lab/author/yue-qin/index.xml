@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yue Qin | APEX, HKUST(GZ) &amp; HKUST</title><link>/author/yue-qin/</link><atom:link href="/author/yue-qin/index.xml" rel="self" type="application/rss+xml"/><description>Yue Qin</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><image><url>/media/logo_hub0d66fecfb75d04d26dd973adb7e184d_88470_300x300_fit_lanczos_3.png</url><title>Yue Qin</title><link>/author/yue-qin/</link></image><item><title>Enabling Voice-Accompanying Hand-to-Face Gesture Recognition with Cross-Device Sensing</title><link>/publication/chi23-voice-hand-face/</link><pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate><guid>/publication/chi23-voice-hand-face/</guid><description>&lt;!-- put your youtube/vimeo video ID here if possible -->
+&lt;!-- &lt;!DOCTYPE HTML>
+&lt;html>
+&lt;head>
+&lt;style type="text/css">
+.aspect-ratio {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 75%;
+}
+.aspect-ratio iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;/head>
+&lt;body>
+&lt;div class="aspect-ratio">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1nA411z7RZ&amp;page=1&amp;high_quality=1&amp;danmaku=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html> --></description></item></channel></rss>
